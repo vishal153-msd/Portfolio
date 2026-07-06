@@ -762,7 +762,7 @@
       } else {
         const data = await response.json().catch(() => null);
         const msg = data && data.errors && data.errors.length
-          ? data.errors.map(err => err.message).join(', ')
+          ? data.errors.map(err => (err.field ? `${err.field} ${err.message}` : err.message)).join(', ')
           : "Something went wrong — please try again or email me directly.";
         formNote.textContent = msg;
         formNote.className = 'mt-4 text-xs text-red-600 font-medium';
