@@ -1,782 +1,836 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vishal — Digital Marketing Professional | Portfolio</title>
-<meta name="description" content="Vishal — B.Com Final Year Student at St. Joseph's College, Tiruchirappalli, and Digital Marketing Intern at Vdart Academy. Skilled in social media marketing, SEO, content writing, graphic design and video editing.">
-<meta name="keywords" content="Vishal, Digital Marketing, Trichy, Tiruchirappalli, St Joseph's College, Vdart Academy, Social Media Marketing, SEO, Content Writing, Graphic Design, Video Editing">
-<meta name="author" content="Vishal">
-<meta property="og:title" content="Vishal — Aspiring Digital Marketing Professional">
-<meta property="og:description" content="Building digital experiences that drive results. B.Com Final Year Student | Digital Marketing Intern at Vdart Academy.">
-<meta property="og:type" content="website">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal R — Digital Marketer | Trichy, Tamil Nadu</title>
+  <meta name="description" content="Portfolio of Vishal R, Digital Marketer with SEO focus, practical content and social media experience from VDart Academy, and foundational analytics.">
+  <meta name="author" content="Vishal R">
+  <meta name="theme-color" content="#8B0015">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          navy: { DEFAULT: '#0A1D3A', 900: '#071328', 800: '#0A1D3A', 700: '#0F2A52' },
-          brand: { DEFAULT: '#1450E0', 600: '#1450E0', 700: '#0F3EB8', 500: '#2E63EE' },
-          sky:   { DEFAULT: '#4FA8FF', 400: '#7CC0FF', 500: '#4FA8FF' },
-          ice:   '#F6F9FF',
-          slate2: '#4A5878',
-        },
-        fontFamily: {
-          display: ['Sora', 'sans-serif'],
-          body: ['Inter', 'sans-serif'],
-          mono: ['IBM Plex Mono', 'monospace'],
-        },
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#B51226',
+              darkred: '#8B0015',
+              black: '#0A0A0A',
+              card: '#121214',
+              canvas: '#F4F4F3',
+              border: '#26262A'
+            }
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            sans: ['"Inter"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace']
+          }
+        }
       }
     }
-  }
-</script>
+  </script>
 
-<style>
-  :root{
-    --navy: #0A1D3A;
-    --brand: #1450E0;
-    --sky: #4FA8FF;
-    --ice: #F6F9FF;
-    --slate2: #4A5878;
-  }
-  *{ scroll-behavior: smooth; }
-  html{ scroll-padding-top: 88px; }
-  body{
-    font-family: 'Inter', sans-serif;
-    color: var(--navy);
-    background: #ffffff;
-    overflow-x: hidden;
-  }
-  h1,h2,h3,h4,.font-display{ font-family: 'Sora', sans-serif; }
-  .font-mono2{ font-family: 'IBM Plex Mono', monospace; }
-
-  /* ---------- Reduced motion ---------- */
-  @media (prefers-reduced-motion: reduce){
-    *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
-  }
-
-  /* ---------- Background texture ---------- */
-  .grid-texture{
-    background-image:
-      linear-gradient(rgba(20,80,224,0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(20,80,224,0.06) 1px, transparent 1px);
-    background-size: 44px 44px;
-  }
-  .hero-glow{
-    background:
-      radial-gradient(600px 400px at 85% 10%, rgba(79,168,255,0.20), transparent 60%),
-      radial-gradient(500px 380px at 10% 90%, rgba(20,80,224,0.12), transparent 60%);
-  }
-
-  /* ---------- Glassmorphism ---------- */
-  .glass{
-    background: rgba(255,255,255,0.65);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255,255,255,0.6);
-    box-shadow: 0 8px 32px rgba(10,29,58,0.08);
-  }
-  .glass-dark{
-    background: rgba(10,29,58,0.55);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255,255,255,0.12);
-  }
-  .card-hover{ transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease; }
-  .card-hover:hover{ transform: translateY(-6px); box-shadow: 0 20px 48px rgba(10,29,58,0.14); border-color: rgba(20,80,224,0.35); }
-
-  /* ---------- Nav active link ---------- */
-  .nav-link{ position: relative; }
-  .nav-link::after{
-    content:''; position:absolute; left:0; bottom:-6px; width:0%; height:2px;
-    background: linear-gradient(90deg, var(--brand), var(--sky));
-    transition: width .3s ease;
-  }
-  .nav-link.active::after, .nav-link:hover::after{ width:100%; }
-  .nav-link.active{ color: var(--brand); }
-
-  /* ---------- Buttons ---------- */
-  .btn-primary{
-    background: linear-gradient(135deg, var(--brand), #2E63EE);
-    box-shadow: 0 10px 30px rgba(20,80,224,0.35);
-    transition: transform .3s ease, box-shadow .3s ease;
-  }
-  .btn-primary:hover{ transform: translateY(-3px); box-shadow: 0 16px 36px rgba(20,80,224,0.45); }
-  .btn-outline{
-    border: 1.5px solid rgba(10,29,58,0.15);
-    transition: all .3s ease;
-  }
-  .btn-outline:hover{ border-color: var(--brand); background: rgba(20,80,224,0.06); transform: translateY(-3px); }
-
-  /* ---------- Reveal on scroll ---------- */
-  .reveal{ opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
-  .reveal.in{ opacity: 1; transform: translateY(0); }
-  .reveal-l{ opacity:0; transform: translateX(-30px); transition: opacity .8s ease, transform .8s ease; }
-  .reveal-l.in{ opacity:1; transform: translateX(0); }
-  .reveal-r{ opacity:0; transform: translateX(30px); transition: opacity .8s ease, transform .8s ease; }
-  .reveal-r.in{ opacity:1; transform: translateX(0); }
-  .stagger > *{ transition-delay: calc(var(--i, 0) * 90ms); }
-
-  /* ---------- Floating animation ---------- */
-  @keyframes floaty{ 0%,100%{ transform: translateY(0px);} 50%{ transform: translateY(-12px);} }
-  .float{ animation: floaty 5.5s ease-in-out infinite; }
-  .float-slow{ animation: floaty 7.5s ease-in-out infinite; }
-  .float-delay{ animation-delay: 1.2s; }
-
-  /* ---------- Pulse dot ---------- */
-  @keyframes pulseDot{ 0%{ box-shadow: 0 0 0 0 rgba(34,197,94,0.55);} 70%{ box-shadow: 0 0 0 8px rgba(34,197,94,0);} 100%{ box-shadow: 0 0 0 0 rgba(34,197,94,0);} }
-  .pulse-dot{ animation: pulseDot 2s infinite; }
-
-  /* ---------- Skill bars ---------- */
-  .skill-track{ background: rgba(10,29,58,0.08); border-radius: 999px; overflow: hidden; }
-  .skill-fill{ width: 0%; transition: width 1.4s cubic-bezier(.2,.8,.2,1); background: linear-gradient(90deg, var(--brand), var(--sky)); }
-
-  /* ---------- Chart draw animation ---------- */
-  .chart-line{ stroke-dasharray: 600; stroke-dashoffset: 600; animation: draw 2.4s ease forwards 0.4s; }
-  @keyframes draw{ to{ stroke-dashoffset: 0; } }
-  .chart-area{ opacity: 0; animation: fadeIn 1.2s ease forwards 1.6s; }
-  @keyframes fadeIn{ to{ opacity: 1; } }
-
-  /* ---------- Timeline ---------- */
-  .timeline-line{
-    background: linear-gradient(to bottom, var(--brand), rgba(20,80,224,0.08));
-  }
-  .timeline-dot{
-    box-shadow: 0 0 0 5px rgba(20,80,224,0.12);
-  }
-
-  /* ---------- Marquee (tools) ---------- */
-  @keyframes marquee{ from{ transform: translateX(0);} to{ transform: translateX(-50%);} }
-  .marquee-track{ animation: marquee 26s linear infinite; }
-  .marquee-wrap:hover .marquee-track{ animation-play-state: paused; }
-
-  /* ---------- Hamburger ---------- */
-  .bar{ transition: transform .35s ease, opacity .25s ease; }
-  .hamburger.open .bar1{ transform: translateY(7px) rotate(45deg); }
-  .hamburger.open .bar2{ opacity: 0; }
-  .hamburger.open .bar3{ transform: translateY(-7px) rotate(-45deg); }
-
-  /* ---------- Focus visibility (a11y) ---------- */
-  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
-    outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 4px;
-  }
-
-  /* ---------- Scroll to top ---------- */
-  #scrollTop{ opacity: 0; pointer-events: none; transition: opacity .3s ease, transform .3s ease; }
-  #scrollTop.show{ opacity: 1; pointer-events: auto; }
-
-  ::selection{ background: rgba(20,80,224,0.2); }
-
-  input, textarea{ font-family: 'Inter', sans-serif; }
-  .field{
-    background: #fff; border: 1.5px solid rgba(10,29,58,0.1); transition: border-color .25s ease, box-shadow .25s ease;
-  }
-  .field:focus{ border-color: var(--brand); box-shadow: 0 0 0 4px rgba(20,80,224,0.1); outline: none; }
-</style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-margin-top: 86px;
+    }
+    ::selection {
+      background-color: #8B0015;
+      color: #FFFFFF;
+    }
+    /* 3D Tactile Buttons */
+    .btn-3d-primary {
+      background: #8B0015;
+      color: #FFFFFF;
+      box-shadow: 4px 4px 0px #0A0A0A;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-3d-primary:hover {
+      background: #B51226;
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0px #0A0A0A;
+    }
+    .btn-3d-primary:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px #0A0A0A;
+    }
+    .btn-3d-secondary {
+      background: #FFFFFF;
+      color: #0A0A0A;
+      border: 2px solid #0A0A0A;
+      box-shadow: 4px 4px 0px #0A0A0A;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-3d-secondary:hover {
+      background: #0A0A0A;
+      color: #FFFFFF;
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0px #8B0015;
+    }
+    .btn-3d-secondary:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px #8B0015;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0A0A0A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #8B0015;
+    }
+  </style>
 </head>
+<body class="bg-[#F4F4F3] text-[#0A0A0A] font-sans antialiased overflow-x-hidden">
 
-<body class="antialiased">
-
-<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] bg-brand text-white px-4 py-2 rounded-lg">Skip to content</a>
-
-<!-- ============ NAVIGATION ============ -->
-<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
-  <nav class="glass border-b border-white/40 mx-auto" aria-label="Primary">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-[76px]">
-      <a href="#home" class="flex items-center gap-2.5 group" aria-label="Vishal — Home">
-        <span class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand to-sky-400 flex items-center justify-center text-white font-display font-bold text-lg shadow-lg shadow-brand/30 group-hover:scale-105 transition-transform">V</span>
-        <span class="font-display font-bold text-lg text-navy tracking-tight">Vishal</span>
+  <!-- Sticky Top Navigation Bar -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#0A0A0A] text-white border-b border-[#26262A] shadow-md">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2 group">
+        <span class="w-8 h-8 bg-[#8B0015] text-white flex items-center justify-center font-display text-xl tracking-tighter font-bold group-hover:bg-[#B51226] transition-colors">V</span>
+        <span class="font-display text-2xl tracking-wider text-white">VISHAL</span>
       </a>
 
-      <ul class="hidden md:flex items-center gap-9 font-medium text-[15px] text-navy/80">
-        <li><a href="#home" class="nav-link active pb-1" data-nav>Home</a></li>
-        <li><a href="#about" class="nav-link pb-1" data-nav>About</a></li>
-        <li><a href="#skills" class="nav-link pb-1" data-nav>Skills</a></li>
-        <li><a href="#experience" class="nav-link pb-1" data-nav>Experience</a></li>
-        <li><a href="#contact" class="nav-link pb-1" data-nav>Contact</a></li>
-      </ul>
+      <!-- 7 Exact Navigation Items -->
+      <nav class="hidden md:flex items-center gap-6 text-xs uppercase font-mono tracking-widest text-zinc-300">
+        <a href="#home" class="hover:text-red-500 transition-colors">Home</a>
+        <a href="#about" class="hover:text-red-500 transition-colors">About</a>
+        <a href="#education" class="hover:text-red-500 transition-colors">Education</a>
+        <a href="#skills" class="hover:text-red-500 transition-colors">Skills</a>
+        <a href="#experience" class="hover:text-red-500 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-red-500 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
+      </nav>
 
-      <div class="hidden md:flex items-center gap-3">
-        <a href="resume.pdf" download class="font-mono2 text-xs font-semibold tracking-wide uppercase px-5 py-2.5 rounded-full btn-primary text-white">Resume</a>
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="downloadResumePdf()" class="btn-3d-primary px-4 py-2 text-xs font-mono font-bold tracking-wider uppercase">
+          Resume ↓
+        </button>
       </div>
 
-      <button id="hamburger" class="hamburger md:hidden w-10 h-10 flex flex-col items-center justify-center gap-[5px]" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
-        <span class="bar bar1 w-6 h-[2px] bg-navy rounded-full"></span>
-        <span class="bar bar2 w-6 h-[2px] bg-navy rounded-full"></span>
-        <span class="bar bar3 w-6 h-[2px] bg-navy rounded-full"></span>
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-toggle" class="md:hidden text-white p-2 focus:outline-none" aria-label="Toggle Navigation">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
       </button>
     </div>
-  </nav>
 
-  <!-- Mobile menu -->
-  <div id="mobileMenu" class="md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out glass border-b border-white/40">
-    <ul class="flex flex-col gap-1 px-6 py-5 font-medium text-navy">
-      <li><a href="#home" class="block py-3 border-b border-navy/5" data-nav-mobile>Home</a></li>
-      <li><a href="#about" class="block py-3 border-b border-navy/5" data-nav-mobile>About</a></li>
-      <li><a href="#skills" class="block py-3 border-b border-navy/5" data-nav-mobile>Skills</a></li>
-      <li><a href="#experience" class="block py-3 border-b border-navy/5" data-nav-mobile>Experience</a></li>
-      <li><a href="#contact" class="block py-3" data-nav-mobile>Contact</a></li>
-      <li class="pt-3"><a href="resume.pdf" download class="block text-center font-mono2 text-xs font-semibold tracking-wide uppercase px-5 py-3 rounded-full btn-primary text-white">Download Resume</a></li>
-    </ul>
-  </div>
-</header>
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0A0A0A] border-b border-[#26262A] px-4 py-4 space-y-3 font-mono text-xs uppercase">
+      <a href="#home" class="block text-zinc-300 hover:text-red-500 py-1">Home</a>
+      <a href="#about" class="block text-zinc-300 hover:text-red-500 py-1">About</a>
+      <a href="#education" class="block text-zinc-300 hover:text-red-500 py-1">Education</a>
+      <a href="#skills" class="block text-zinc-300 hover:text-red-500 py-1">Skills</a>
+      <a href="#experience" class="block text-zinc-300 hover:text-red-500 py-1">Experience</a>
+      <a href="#projects" class="block text-zinc-300 hover:text-red-500 py-1">Projects</a>
+      <a href="#contact" class="block text-zinc-300 hover:text-red-500 py-1">Contact</a>
+      <button onclick="downloadResumePdf()" class="btn-3d-primary w-full py-2.5 text-xs font-bold tracking-wider uppercase mt-2">
+        Download Resume ↓
+      </button>
+    </div>
+  </header>
 
-<main id="main">
-<!-- ============ HERO ============ -->
-<section id="home" class="relative grid-texture hero-glow pt-40 pb-24 md:pt-48 md:pb-32 px-5 sm:px-8 overflow-hidden">
-  <div class="max-w-7xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-16 items-center">
+  <!-- 01. HOME (HERO) -->
+  <section id="home" class="min-h-screen pt-28 pb-16 flex items-center justify-center relative bg-[#F4F4F3] border-b border-[#0A0A0A]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Constructivist Graphic Poster Element -->
+      <div class="lg:col-span-5 flex justify-center order-2 lg:order-1">
+        <div class="relative w-full max-w-[340px] aspect-[4/5] bg-white border-2 border-[#0A0A0A] p-6 shadow-[10px_10px_0px_#0A0A0A] flex flex-col justify-between overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-44 h-44 bg-[#8B0015] rounded-full opacity-90"></div>
+          <div class="absolute top-1/4 -left-8 w-24 h-48 bg-[#0A0A0A] -rotate-12 opacity-95"></div>
+          
+          <div class="relative z-10 font-mono text-[10px] uppercase tracking-widest text-[#0A0A0A] border-b-2 border-[#0A0A0A] pb-2 flex justify-between">
+            <span>Portfolio 2026</span>
+            <span class="text-[#8B0015] font-bold">Trichy, TN</span>
+          </div>
 
-    <div class="reveal in">
-      <div class="inline-flex items-center gap-2 font-mono2 text-xs tracking-widest uppercase text-brand bg-brand/8 border border-brand/15 rounded-full px-4 py-2 mb-7">
-        <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-dot"></span>
-        Tiruchirappalli, Tamil Nadu · Open to Internships
+          <div class="relative z-10 my-auto text-center py-6">
+            <span class="font-display text-8xl sm:text-9xl tracking-tighter text-[#0A0A0A] block leading-none select-none">V</span>
+            <span class="font-mono text-xs font-bold tracking-widest uppercase bg-[#0A0A0A] text-white px-3 py-1 inline-block mt-2">Vishal R</span>
+          </div>
+
+          <div class="relative z-10 font-mono text-[11px] text-zinc-800 border-t-2 border-[#0A0A0A] pt-3 flex justify-between items-center">
+            <span class="font-bold">PRIMARY FOCUS:</span>
+            <span class="text-[#8B0015] font-bold">SEO & CONTENT</span>
+          </div>
+        </div>
       </div>
 
-      <h1 class="font-display font-extrabold text-[2.6rem] leading-[1.08] sm:text-5xl md:text-[3.4rem] md:leading-[1.08] text-navy tracking-tight">
-        Building Digital Experiences That<span class="relative inline-block ml-2 whitespace-nowrap">Drive Results
-          <svg class="absolute left-0 -bottom-2 w-full" height="10" viewBox="0 0 300 10" fill="none" preserveAspectRatio="none"><path d="M2 7C60 2 240 2 298 7" stroke="url(#g1)" stroke-width="4" stroke-linecap="round"/><defs><linearGradient id="g1" x1="0" y1="0" x2="300" y2="0"><stop stop-color="#1450E0"/><stop offset="1" stop-color="#4FA8FF"/></linearGradient></defs></svg>
-        </span>
-      </h1>
-
-      <p class="mt-7 text-lg text-slate2 max-w-xl leading-relaxed">
-        B.Com Student <span class="text-navy/30">·</span> Aspiring Digital Marketing Professional <span class="text-navy/30">·</span> Creative Designer — currently interning at <span class="text-navy font-semibold">Vdart Academy</span>, turning ideas into content that performs.
-      </p>
-
-      <div class="mt-10 flex flex-wrap items-center gap-4">
-        <a href="resume.pdf" download class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full btn-primary text-white font-semibold text-sm">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
-          Download Resume
-        </a>
-        <a href="#contact" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full btn-outline font-semibold text-sm text-navy">
-          Contact Me
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>
-        </a>
-      </div>
-
-      <div class="mt-14 flex items-center gap-8 flex-wrap">
-        <div>
-          <p class="font-display font-extrabold text-2xl text-navy">2027</p>
-          <p class="font-mono2 text-[11px] uppercase tracking-wider text-slate2 mt-1">Graduation Year</p>
+      <!-- Hero Typography & Positioning -->
+      <div class="lg:col-span-7 space-y-6 order-1 lg:order-2">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-[#0A0A0A] text-xs font-mono font-semibold uppercase tracking-wider text-[#0A0A0A] shadow-[2px_2px_0px_#8B0015]">
+          <span class="w-2 h-2 bg-[#8B0015] inline-block animate-pulse"></span>
+          Digital Marketing Intern · VDart Academy
         </div>
-        <div class="w-px h-9 bg-navy/10"></div>
+
         <div>
-          <p class="font-display font-extrabold text-2xl text-navy">7+</p>
-          <p class="font-mono2 text-[11px] uppercase tracking-wider text-slate2 mt-1">Marketing &amp; Design Tools</p>
+          <h1 class="font-display text-6xl sm:text-8xl md:text-9xl tracking-tight leading-[0.88] text-[#0A0A0A]">
+            DIGITAL<br>
+            <span class="text-[#8B0015]">MARKETER</span>
+          </h1>
+          <p class="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-600 mt-3 font-semibold">
+            Building search visibility through data-driven optimization
+          </p>
         </div>
-        <div class="w-px h-9 bg-navy/10"></div>
-        <div>
-          <p class="font-display font-extrabold text-2xl text-navy">St. Joseph's</p>
-          <p class="font-mono2 text-[11px] uppercase tracking-wider text-slate2 mt-1">College, Trichy</p>
+
+        <p class="text-zinc-700 text-sm sm:text-base leading-relaxed max-w-xl">
+          Final-year B.Com General student at St. Joseph College with PGDCA technical background. Actively handling content creation, social media strategy, and reels editing at <b>VDart Academy</b>, with a core specialization in Search Engine Optimization (SEO) and website performance.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a href="#projects" class="btn-3d-primary px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider">
+            View Projects →
+          </a>
+          <button onclick="downloadResumePdf()" class="btn-3d-secondary px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider">
+            Download Resume ↓
+          </button>
+          <a href="#contact" class="btn-3d-secondary px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider">
+            Contact Me ↗
+          </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Signature element: profile snapshot -->
-    <div class="relative reveal-r in h-[420px] sm:h-[460px] lg:h-[500px]">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="w-[92%] max-w-md glass rounded-3xl p-8 shadow-2xl shadow-brand/10 text-center">
-          <div class="relative w-28 h-28 mx-auto mb-5">
-            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-brand to-sky-400 rotate-6"></div>
-            <div class="absolute inset-[3px] rounded-full bg-white flex items-center justify-center">
-              <span class="font-display font-extrabold text-4xl bg-gradient-to-br from-brand to-sky-500 bg-clip-text text-transparent">V</span>
-            </div>
-            <span class="absolute bottom-1 right-1 w-5 h-5 rounded-full bg-emerald-500 ring-4 ring-white pulse-dot"></span>
-          </div>
+  <!-- 02. ABOUT -->
+  <section id="about" class="py-20 bg-white border-b border-[#0A0A0A]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-baseline gap-4 border-b-2 border-[#0A0A0A] pb-3 mb-10">
+        <span class="font-display text-3xl sm:text-4xl text-[#8B0015]">01</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-[#0A0A0A] tracking-wider uppercase">About Me</h2>
+      </div>
 
-          <p class="font-display font-bold text-navy text-xl">Vishal</p>
-          <p class="text-sm text-slate2 mt-1">Digital Marketing Intern · Vdart Academy</p>
-          <p class="font-mono2 text-[11px] uppercase tracking-widest text-brand mt-2">Tiruchirappalli, Tamil Nadu</p>
-
-          <div class="flex flex-wrap justify-center gap-2 mt-6 pt-6 border-t border-navy/8">
-            <span class="font-mono2 text-[11px] font-medium text-navy bg-brand/8 border border-brand/15 rounded-full px-3 py-1.5">Social Media</span>
-            <span class="font-mono2 text-[11px] font-medium text-navy bg-brand/8 border border-brand/15 rounded-full px-3 py-1.5">SEO</span>
-            <span class="font-mono2 text-[11px] font-medium text-navy bg-brand/8 border border-brand/15 rounded-full px-3 py-1.5">Content Writing</span>
-            <span class="font-mono2 text-[11px] font-medium text-navy bg-brand/8 border border-brand/15 rounded-full px-3 py-1.5">Graphic Design</span>
-            <span class="font-mono2 text-[11px] font-medium text-navy bg-brand/8 border border-brand/15 rounded-full px-3 py-1.5">Video Editing</span>
-          </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-7 space-y-4 text-zinc-800 text-sm sm:text-base leading-relaxed">
+          <p class="font-display text-2xl sm:text-3xl text-[#0A0A0A] leading-snug">
+            A practical learner blending creative social content with technical search intent.
+          </p>
+          <p>
+            I am a final-year B.Com General student at <b>St. Joseph College (2024–2027)</b>, having completed my <b>Post Graduate Diploma in Computer Applications (PGDCA)</b>. Through hands-on marketing work, I discovered how content structure directly impacts audience reach and website visibility.
+          </p>
+          <p>
+            My daily responsibilities revolve around strategic content planning, promotional asset creation, and short-form video editing. I am committed to learning through practical implementation and personal SEO audits, communicating with clarity and delivering results on time.
+          </p>
         </div>
-      </div>
 
-      <div class="absolute -top-2 right-2 sm:right-6 float glass rounded-2xl px-4 py-3 shadow-xl">
-        <p class="font-mono2 text-[10px] uppercase tracking-widest text-slate2">Content Created</p>
-        <p class="font-display font-bold text-navy">25+ Assets</p>
-      </div>
-
-      <div class="absolute bottom-4 -left-2 sm:left-0 float-slow float-delay glass rounded-2xl px-4 py-3 shadow-xl">
-        <div class="flex items-center gap-2">
-          <span class="w-8 h-8 rounded-full bg-gradient-to-br from-brand to-sky-400 flex items-center justify-center text-white font-display text-xs font-bold">B</span>
+        <div class="lg:col-span-5 bg-[#F4F4F3] border-2 border-[#0A0A0A] p-6 shadow-[6px_6px_0px_#0A0A0A] space-y-4 font-mono text-xs">
+          <div class="border-b border-zinc-300 pb-2">
+            <span class="text-zinc-500 uppercase block text-[10px]">Location</span>
+            <span class="font-bold text-sm text-[#0A0A0A]">Tiruchirappalli, Tamil Nadu</span>
+          </div>
+          <div class="border-b border-zinc-300 pb-2">
+            <span class="text-zinc-500 uppercase block text-[10px]">Current Role</span>
+            <span class="font-bold text-sm text-[#8B0015]">Digital Marketing Intern · VDart Academy</span>
+          </div>
+          <div class="border-b border-zinc-300 pb-2">
+            <span class="text-zinc-500 uppercase block text-[10px]">Education</span>
+            <span class="font-bold text-sm text-[#0A0A0A]">B.Com General (2024–2027)</span>
+          </div>
           <div>
-            <p class="font-display font-bold text-navy text-xs">B.Com</p>
-            <p class="font-mono2 text-[9px] text-slate2">Final Year · Graduating 2027</p>
+            <span class="text-zinc-500 uppercase block text-[10px]">Languages</span>
+            <span class="font-bold text-sm text-[#0A0A0A]">Tamil · English</span>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- 03. EDUCATION -->
+  <section id="education" class="py-20 bg-[#F4F4F3] border-b border-[#0A0A0A]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-baseline gap-4 border-b-2 border-[#0A0A0A] pb-3 mb-10">
+        <span class="font-display text-3xl sm:text-4xl text-[#8B0015]">02</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-[#0A0A0A] tracking-wider uppercase">Education</h2>
+      </div>
 
-<!-- ============ ABOUT ============ -->
-<section id="about" class="py-24 md:py-32 px-5 sm:px-8 bg-ice">
-  <div class="max-w-7xl mx-auto">
-    <div class="reveal max-w-2xl mx-auto text-center mb-16">
-      <p class="font-mono2 text-xs uppercase tracking-widest text-brand mb-3">About</p>
-      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy tracking-tight">The Person Behind the Work</h2>
-    </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white border-2 border-[#0A0A0A] p-6 shadow-[5px_5px_0px_#0A0A0A] space-y-2">
+          <span class="font-mono text-xs font-bold text-[#8B0015] uppercase tracking-wider block">2024 – 2027 · Final Year</span>
+          <h3 class="font-display text-2xl text-[#0A0A0A]">B.Com General</h3>
+          <p class="font-mono text-xs text-zinc-600">St. Joseph College, Tiruchirappalli</p>
+          <p class="text-xs text-zinc-700 pt-2 border-t border-zinc-200">
+            Building strong foundations in commerce, marketing principles, business negotiation, and corporate management.
+          </p>
+        </div>
 
-    <div class="grid lg:grid-cols-[0.85fr_1.15fr] gap-14 items-center">
-      <div class="reveal-l flex justify-center lg:justify-start">
-        <div class="relative w-64 h-64 sm:w-80 sm:h-80">
-          <div class="absolute inset-0 rounded-[2.2rem] bg-gradient-to-br from-brand to-sky-400 rotate-6"></div>
-          <div class="absolute inset-0 rounded-[2.2rem] glass rotate-0 flex items-center justify-center">
-            <span class="font-display font-extrabold text-8xl bg-gradient-to-br from-brand to-sky-500 bg-clip-text text-transparent">V</span>
-          </div>
-          <div class="absolute -bottom-5 -right-5 glass rounded-2xl px-4 py-3 shadow-lg">
-            <p class="font-display font-bold text-navy text-sm">B.Com · Final Year</p>
-            <p class="font-mono2 text-[10px] text-slate2">Graduating 2027</p>
-          </div>
+        <div class="bg-white border-2 border-[#0A0A0A] p-6 shadow-[5px_5px_0px_#0A0A0A] space-y-2">
+          <span class="font-mono text-xs font-bold text-[#8B0015] uppercase tracking-wider block">Completed</span>
+          <h3 class="font-display text-2xl text-[#0A0A0A]">PGDCA</h3>
+          <p class="font-mono text-xs text-zinc-600">Post Graduate Diploma in Computer Applications</p>
+          <p class="text-xs text-zinc-700 pt-2 border-t border-zinc-200">
+            Technical training covering computer application fundamentals, digital systems, productivity software, and spreadsheet data handling.
+          </p>
+        </div>
+
+        <div class="bg-white border-2 border-[#0A0A0A] p-6 shadow-[5px_5px_0px_#0A0A0A] space-y-2">
+          <span class="font-mono text-xs font-bold text-zinc-500 uppercase tracking-wider block">Higher Secondary</span>
+          <h3 class="font-display text-2xl text-[#0A0A0A]">Higher Secondary School (HSC)</h3>
+          <p class="font-mono text-xs text-zinc-600">Bishop Heber Higher Secondary School, Trichy</p>
+        </div>
+
+        <div class="bg-white border-2 border-[#0A0A0A] p-6 shadow-[5px_5px_0px_#0A0A0A] space-y-2">
+          <span class="font-mono text-xs font-bold text-zinc-500 uppercase tracking-wider block">Secondary School</span>
+          <h3 class="font-display text-2xl text-[#0A0A0A]">Secondary School Leaving Certificate (SSLC)</h3>
+          <p class="font-mono text-xs text-zinc-600">Jegan Matha Higher Secondary School, Trichy</p>
         </div>
       </div>
 
-      <div class="reveal">
-        <p class="text-lg text-slate2 leading-relaxed">
-          I'm a final-year <span class="text-navy font-semibold">B.Com student</span> at St. Joseph's College, Tiruchirappalli, with a genuine passion for digital marketing, branding, content creation, graphic design, and video editing. Through my internship at <span class="text-navy font-semibold">Vdart Academy</span>, I'm gaining hands-on experience across social media marketing, SEO, content writing, graphic design, and video editing.
-        </p>
-        <p class="mt-5 text-lg text-slate2 leading-relaxed">
-          I enjoy learning new technologies and AI-powered marketing tools, and I like turning a blank page into something that actually connects with people — whether that's a caption, a reel, or a full campaign concept.
-        </p>
-
-        <div class="grid sm:grid-cols-2 gap-4 mt-9 stagger">
-          <div class="glass card-hover rounded-2xl p-5" style="--i:0">
-            <p class="font-mono2 text-[10px] uppercase tracking-widest text-brand mb-1">Location</p>
-            <p class="font-display font-semibold text-navy">Tiruchirappalli, Tamil Nadu</p>
-          </div>
-          <div class="glass card-hover rounded-2xl p-5" style="--i:1">
-            <p class="font-mono2 text-[10px] uppercase tracking-widest text-brand mb-1">Education</p>
-            <p class="font-display font-semibold text-navy">B.Com, Final Year</p>
-          </div>
-          <div class="glass card-hover rounded-2xl p-5" style="--i:2">
-            <p class="font-mono2 text-[10px] uppercase tracking-widest text-brand mb-1">College</p>
-            <p class="font-display font-semibold text-navy">St. Joseph's College</p>
-          </div>
-          <div class="glass card-hover rounded-2xl p-5" style="--i:3">
-            <p class="font-mono2 text-[10px] uppercase tracking-widest text-brand mb-1">Current Role</p>
-            <p class="font-display font-semibold text-navy">Intern, Vdart Academy</p>
-          </div>
-        </div>
+      <!-- Extra-Curricular Badge -->
+      <div class="mt-8 bg-white border border-[#0A0A0A] p-4 flex items-center gap-4 text-xs font-mono">
+        <span class="px-2 py-1 bg-[#8B0015] text-white font-bold uppercase text-[10px]">Extracurricular</span>
+        <span><b>Inter-College IPL Auction Strategy Event:</b> Developed business budgeting, negotiation, live bidding, and teamwork skills.</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ SKILLS ============ -->
-<section id="skills" class="py-24 md:py-32 px-5 sm:px-8 bg-white">
-  <div class="max-w-7xl mx-auto">
-    <div class="reveal max-w-2xl mx-auto text-center mb-16">
-      <p class="font-mono2 text-xs uppercase tracking-widest text-brand mb-3">Skills</p>
-      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy tracking-tight">What I Bring to the Table</h2>
-    </div>
+  <!-- 04. SKILLS & MY CREATIVE TOOLKIT -->
+  <section id="skills" class="py-20 bg-white border-b border-[#0A0A0A]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-baseline gap-4 border-b-2 border-[#0A0A0A] pb-3 mb-10">
+        <span class="font-display text-3xl sm:text-4xl text-[#8B0015]">03</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-[#0A0A0A] tracking-wider uppercase">Core Skills</h2>
+      </div>
 
-    <div class="grid lg:grid-cols-2 gap-14">
-      <!-- Core skills with progress bars -->
-      <div class="reveal-l">
-        <h3 class="font-display font-bold text-xl text-navy mb-7">Core Skills</h3>
-        <div class="space-y-6" id="skillBars">
-          <div class="skill-item">
-            <div class="flex justify-between mb-2">
-              <span class="font-medium text-navy text-sm">Digital Marketing</span>
-              <span class="font-mono2 text-xs text-brand" data-skill-num>85%</span>
-            </div>
-            <div class="skill-track h-2.5"><div class="skill-fill h-full" data-skill="85"></div></div>
+      <!-- 3 Structured Skill Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <!-- SEO (Primary) -->
+        <div class="bg-[#F4F4F3] border-2 border-[#8B0015] p-6 shadow-[5px_5px_0px_#8B0015] space-y-4">
+          <div class="flex justify-between items-center border-b border-zinc-300 pb-2">
+            <h3 class="font-display text-2xl text-[#8B0015]">SEO (Primary Focus)</h3>
+            <span class="font-mono text-[10px] bg-[#8B0015] text-white px-2 py-0.5 uppercase">Primary</span>
           </div>
-          <div class="skill-item">
-            <div class="flex justify-between mb-2">
-              <span class="font-medium text-navy text-sm">Social Media Marketing</span>
-              <span class="font-mono2 text-xs text-brand" data-skill-num>88%</span>
-            </div>
-            <div class="skill-track h-2.5"><div class="skill-fill h-full" data-skill="88"></div></div>
+          <ul class="font-mono text-xs text-zinc-800 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#8B0015]"></span>Keyword Research</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#8B0015]"></span>On-Page SEO Optimization</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#8B0015]"></span>Technical SEO Fundamentals</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#8B0015]"></span>Website SEO Auditing</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#8B0015]"></span>Meta Titles & Descriptions</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#8B0015]"></span>Search Intent Analysis</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#8B0015]"></span>Content & Heading Optimization</li>
+          </ul>
+        </div>
+
+        <!-- Digital Marketing -->
+        <div class="bg-[#F4F4F3] border-2 border-[#0A0A0A] p-6 shadow-[5px_5px_0px_#0A0A0A] space-y-4">
+          <div class="flex justify-between items-center border-b border-zinc-300 pb-2">
+            <h3 class="font-display text-2xl text-[#0A0A0A]">Digital Marketing</h3>
+            <span class="font-mono text-[10px] bg-[#0A0A0A] text-white px-2 py-0.5 uppercase">Practical</span>
           </div>
-          <div class="skill-item">
-            <div class="flex justify-between mb-2">
-              <span class="font-medium text-navy text-sm">Content Writing</span>
-              <span class="font-mono2 text-xs text-brand" data-skill-num>82%</span>
-            </div>
-            <div class="skill-track h-2.5"><div class="skill-fill h-full" data-skill="82"></div></div>
+          <ul class="font-mono text-xs text-zinc-800 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Social Media Management</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Content Planning & Scheduling</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Social Creative Design</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Reels & Video Editing</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Instagram Page Publishing</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Audience Engagement Growth</li>
+          </ul>
+        </div>
+
+        <!-- Basic Analytics -->
+        <div class="bg-[#F4F4F3] border-2 border-[#0A0A0A] p-6 shadow-[5px_5px_0px_#0A0A0A] space-y-4">
+          <div class="flex justify-between items-center border-b border-zinc-300 pb-2">
+            <h3 class="font-display text-2xl text-[#0A0A0A]">Basic Analytics</h3>
+            <span class="font-mono text-[10px] bg-[#0A0A0A] text-white px-2 py-0.5 uppercase">Supporting</span>
           </div>
-          <div class="skill-item">
-            <div class="flex justify-between mb-2">
-              <span class="font-medium text-navy text-sm">Graphic Design</span>
-              <span class="font-mono2 text-xs text-brand" data-skill-num>80%</span>
-            </div>
-            <div class="skill-track h-2.5"><div class="skill-fill h-full" data-skill="80"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="flex justify-between mb-2">
-              <span class="font-medium text-navy text-sm">Video Editing</span>
-              <span class="font-mono2 text-xs text-brand" data-skill-num>85%</span>
-            </div>
-            <div class="skill-track h-2.5"><div class="skill-fill h-full" data-skill="85"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="flex justify-between mb-2">
-              <span class="font-medium text-navy text-sm">SEO (Basics)</span>
-              <span class="font-mono2 text-xs text-brand" data-skill-num>68%</span>
-            </div>
-            <div class="skill-track h-2.5"><div class="skill-fill h-full" data-skill="68"></div></div>
-          </div>
+          <ul class="font-mono text-xs text-zinc-800 space-y-2">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Microsoft Excel Data Tracking</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Basic Data Interpretation</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Performance Measurement</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Engagement Reporting</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#0A0A0A]"></span>Content Audit Analytics</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Tools -->
-      <div class="reveal-r">
-        <h3 class="font-display font-bold text-xl text-navy mb-7">Tools &amp; Software</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 stagger">
-          <!-- tool chips -->
-          <div class="glass card-hover rounded-2xl p-4 flex flex-col items-center text-center gap-2" style="--i:0">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand/15 to-sky-400/15 flex items-center justify-center text-brand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div>
-            <span class="text-xs font-semibold text-navy">Canva</span>
+      <!-- MY CREATIVE TOOLKIT (Matches Reference Image Exactly) -->
+      <div class="bg-[#0D0D0E] border-2 border-[#1E1E22] rounded-2xl p-8 sm:p-12 shadow-2xl">
+        <div class="text-center space-y-2 mb-10">
+          <p class="font-mono text-[11px] uppercase tracking-widest text-zinc-400 font-semibold">
+            — TOOLS I USE —
+          </p>
+          <h3 class="font-display text-4xl sm:text-5xl text-white tracking-wide">
+            My Creative <span class="text-[#FA2B43]">Toolkit</span>
+          </h3>
+          <p class="text-zinc-400 text-xs sm:text-sm font-sans">
+            These are the tools I use to create, edit, design and get things done.
+          </p>
+        </div>
+
+        <!-- 5 Separate Official Tool Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+          
+          <!-- Canva -->
+          <div class="bg-[#151518] hover:bg-[#1A1A1F] border border-[#232328] rounded-xl p-6 flex flex-col items-center justify-between text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#383840] group">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center my-auto">
+              <!-- Official Canva Circular Multi-Stop Gradient -->
+              <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 100 100" fill="none">
+                <defs>
+                  <linearGradient id="canva-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00C4CC"/>
+                    <stop offset="50%" stop-color="#7D2AE8"/>
+                    <stop offset="100%" stop-color="#FF4B72"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="48" fill="url(#canva-grad)"/>
+                <path d="M62 42c-2-4-7-6-12-6-10 0-17 9-17 19 0 9 6 15 14 15 6 0 11-4 13-9l-5-2c-1 3-4 5-8 5-5 0-9-4-9-9 0-1 0-2 .2-3h25c0-6-1-10-1-10zm-19 3c1-5 4-8 8-8s8 3 8 8h-16z" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <span class="text-xs font-sans font-medium text-white tracking-wide mt-4">Canva</span>
           </div>
-          <div class="glass card-hover rounded-2xl p-4 flex flex-col items-center text-center gap-2" style="--i:1">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand/15 to-sky-400/15 flex items-center justify-center text-brand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="14" height="10" rx="2"/><path d="M17 9l4-2v10l-4-2"/></svg></div>
-            <span class="text-xs font-semibold text-navy">CapCut</span>
+
+          <!-- CapCut -->
+          <div class="bg-[#151518] hover:bg-[#1A1A1F] border border-[#232328] rounded-xl p-6 flex flex-col items-center justify-between text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#383840] group">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center my-auto">
+              <!-- Official CapCut White Squircle + Black Chevron -->
+              <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 100 100" fill="none">
+                <rect width="100" height="100" rx="24" fill="#FFFFFF"/>
+                <path d="M22 30h24l16 20-16 20H22l16-20L22 30z" fill="#0A0A0A"/>
+                <path d="M78 30H54l-16 20 16 20h24L62 50l16-20z" fill="#0A0A0A"/>
+              </svg>
+            </div>
+            <span class="text-xs font-sans font-medium text-white tracking-wide mt-4">CapCut</span>
           </div>
-          <div class="glass card-hover rounded-2xl p-4 flex flex-col items-center text-center gap-2" style="--i:2">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand/15 to-sky-400/15 flex items-center justify-center text-brand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg></div>
-            <span class="text-xs font-semibold text-navy">DaVinci Resolve</span>
+
+          <!-- VN Editor -->
+          <div class="bg-[#151518] hover:bg-[#1A1A1F] border border-[#232328] rounded-xl p-6 flex flex-col items-center justify-between text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#383840] group">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center my-auto">
+              <!-- Official VN White Squircle + VN Typography & Red Flag -->
+              <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 100 100" fill="none">
+                <rect width="100" height="100" rx="24" fill="#FFFFFF"/>
+                <text x="28" y="66" font-family="'Inter', sans-serif" font-weight="900" font-size="44" fill="#0A0A0A">V</text>
+                <text x="54" y="66" font-family="'Inter', sans-serif" font-weight="900" font-size="44" fill="#0A0A0A">N</text>
+                <polygon points="76,32 86,32 81,42" fill="#FA2B43"/>
+              </svg>
+            </div>
+            <span class="text-xs font-sans font-medium text-white tracking-wide mt-4">VN Editor</span>
           </div>
-          <div class="glass card-hover rounded-2xl p-4 flex flex-col items-center text-center gap-2" style="--i:3">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand/15 to-sky-400/15 flex items-center justify-center text-brand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="6,4 20,12 6,20"/></svg></div>
-            <span class="text-xs font-semibold text-navy">VN Editor</span>
+
+          <!-- Adobe Photoshop -->
+          <div class="bg-[#151518] hover:bg-[#1A1A1F] border border-[#232328] rounded-xl p-6 flex flex-col items-center justify-between text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#383840] group">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center my-auto">
+              <!-- Official Photoshop Navy Square + Cyan Ps -->
+              <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 100 100" fill="none">
+                <rect width="100" height="100" rx="20" fill="#001E36"/>
+                <text x="20" y="68" font-family="'Inter', sans-serif" font-weight="800" font-size="46" fill="#31A8FF">Ps</text>
+              </svg>
+            </div>
+            <span class="text-xs font-sans font-medium text-white tracking-wide mt-4">Adobe Photoshop</span>
           </div>
-          <div class="glass card-hover rounded-2xl p-4 flex flex-col items-center text-center gap-2" style="--i:4">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand/15 to-sky-400/15 flex items-center justify-center text-brand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg></div>
-            <span class="text-xs font-semibold text-navy">AI Editing Tools</span>
+
+          <!-- Microsoft Excel -->
+          <div class="bg-[#151518] hover:bg-[#1A1A1F] border border-[#232328] rounded-xl p-6 flex flex-col items-center justify-between text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#383840] group col-span-2 sm:col-span-1">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center my-auto">
+              <!-- Official Microsoft Fluent Excel Grid & Badge -->
+              <svg class="w-14 h-14 sm:w-16 sm:h-16" viewBox="0 0 100 100" fill="none">
+                <rect x="25" y="15" width="60" height="70" rx="6" fill="#107C41"/>
+                <path d="M45 35h30v8H45zM45 47h30v8H45zM45 59h30v8H45z" fill="#33C481" opacity="0.9"/>
+                <rect x="15" y="25" width="40" height="50" rx="6" fill="#0E5C2F" filter="drop-shadow(2px 3px 4px rgba(0,0,0,0.3))"/>
+                <text x="24" y="62" font-family="'Inter', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF">X</text>
+              </svg>
+            </div>
+            <span class="text-xs font-sans font-medium text-white tracking-wide mt-4">Microsoft Excel</span>
           </div>
-          <div class="glass card-hover rounded-2xl p-4 flex flex-col items-center text-center gap-2" style="--i:5">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand/15 to-sky-400/15 flex items-center justify-center text-brand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-            <span class="text-xs font-semibold text-navy">MS Excel</span>
-          </div>
-          <div class="glass card-hover rounded-2xl p-4 flex flex-col items-center text-center gap-2 sm:col-span-1 col-span-2" style="--i:6">
-            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand/15 to-sky-400/15 flex items-center justify-center text-brand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
-            <span class="text-xs font-semibold text-navy">MS Office</span>
-          </div>
+
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ EXPERIENCE / JOURNEY (TIMELINE) ============ -->
-<section id="experience" class="py-24 md:py-32 px-5 sm:px-8 bg-ice">
-  <div class="max-w-7xl mx-auto">
-    <div class="reveal max-w-2xl mx-auto text-center mb-16">
-      <p class="font-mono2 text-xs uppercase tracking-widest text-brand mb-3">Experience &amp; Education</p>
-      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy tracking-tight">My Journey So Far</h2>
-    </div>
+  <!-- 05. EXPERIENCE -->
+  <section id="experience" class="py-20 bg-[#F4F4F3] border-b border-[#0A0A0A]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-baseline gap-4 border-b-2 border-[#0A0A0A] pb-3 mb-10">
+        <span class="font-display text-3xl sm:text-4xl text-[#8B0015]">04</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-[#0A0A0A] tracking-wider uppercase">Internship Experience</h2>
+      </div>
 
-    <div class="relative max-w-3xl mx-auto">
-      <div class="absolute left-[19px] sm:left-1/2 top-0 bottom-0 w-[2px] timeline-line sm:-translate-x-1/2"></div>
+      <div class="bg-white border-2 border-[#0A0A0A] p-8 shadow-[8px_8px_0px_#0A0A0A]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-5 space-y-3 border-b lg:border-b-0 lg:border-r border-zinc-300 pb-6 lg:pb-0 lg:pr-6">
+            <span class="inline-block px-3 py-1 bg-[#8B0015] text-white font-mono text-[10px] uppercase font-bold tracking-widest">
+              May 2026 – Present
+            </span>
+            <h3 class="font-display text-3xl sm:text-4xl text-[#0A0A0A]">Digital Marketing Intern</h3>
+            <p class="font-display text-2xl text-[#8B0015]">VDart Academy</p>
+            <p class="font-mono text-xs text-zinc-600">Mannarpuram, Tiruchirappalli, Tamil Nadu</p>
+            
+            <div class="pt-4">
+              <span class="font-mono text-[11px] text-zinc-500 uppercase block mb-2 font-bold">Tools in Daily Use</span>
+              <div class="flex flex-wrap gap-2 text-xs font-mono">
+                <span class="px-2 py-1 bg-zinc-100 border border-zinc-300">Canva</span>
+                <span class="px-2 py-1 bg-zinc-100 border border-zinc-300">CapCut</span>
+                <span class="px-2 py-1 bg-zinc-100 border border-zinc-300">VN Editor</span>
+                <span class="px-2 py-1 bg-zinc-100 border border-zinc-300">Adobe Photoshop</span>
+                <span class="px-2 py-1 bg-zinc-100 border border-zinc-300">AI-Assisted Tools</span>
+              </div>
+            </div>
+          </div>
 
-      <!-- Item 1: Internship (current) -->
-      <div class="relative pl-14 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10 mb-14 reveal-l">
-        <div class="absolute left-[11px] sm:left-1/2 top-1 w-4 h-4 rounded-full bg-brand timeline-dot sm:-translate-x-1/2 ring-4 ring-white"></div>
-        <div class="sm:text-right sm:pr-4">
-          <span class="font-mono2 text-[11px] uppercase tracking-widest text-brand">Present</span>
-          <h3 class="font-display font-bold text-lg text-navy mt-1">Digital Marketing Intern</h3>
-          <p class="text-sm text-slate2">Vdart Academy</p>
-        </div>
-        <div class="sm:pl-4 mt-4 sm:mt-0">
-          <div class="glass card-hover rounded-2xl p-5">
-            <ul class="space-y-2 text-sm text-slate2">
-              <li class="flex gap-2"><span class="text-brand mt-1">▸</span>Social media content creation</li>
-              <li class="flex gap-2"><span class="text-brand mt-1">▸</span>Graphic design &amp; video editing</li>
-              <li class="flex gap-2"><span class="text-brand mt-1">▸</span>Content writing &amp; campaign support</li>
-              <li class="flex gap-2"><span class="text-brand mt-1">▸</span>Basic SEO &amp; analytics</li>
+          <div class="lg:col-span-7 space-y-4">
+            <h4 class="font-mono text-xs uppercase tracking-widest text-[#8B0015] font-bold">Key Responsibilities</h4>
+            <ul class="space-y-2 text-sm text-zinc-700">
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 bg-[#8B0015] mt-1.5 shrink-0"></span>
+                <span>Social media management and structured content planning.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 bg-[#8B0015] mt-1.5 shrink-0"></span>
+                <span>Creating digital marketing content and creative assets for social media platforms.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 bg-[#8B0015] mt-1.5 shrink-0"></span>
+                <span>Designing posters, flyers, and creative graphics using Canva and Photoshop.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 bg-[#8B0015] mt-1.5 shrink-0"></span>
+                <span>Editing short-form video reels using CapCut and VN Editor.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 bg-[#8B0015] mt-1.5 shrink-0"></span>
+                <span>Publishing content and actively managing the academy's official Instagram profile.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 bg-[#8B0015] mt-1.5 shrink-0"></span>
+                <span>Supporting social engagement and growing digital presence consistently.</span>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Item 2: Education -->
-      <div class="relative pl-14 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-10 reveal-r">
-        <div class="absolute left-[11px] sm:left-1/2 top-1 w-4 h-4 rounded-full bg-navy timeline-dot sm:-translate-x-1/2 ring-4 ring-white"></div>
-        <div class="sm:order-2 sm:pl-4">
-          <span class="font-mono2 text-[11px] uppercase tracking-widest text-slate2">2027</span>
-          <h3 class="font-display font-bold text-lg text-navy mt-1">Bachelor of Commerce (B.Com)</h3>
-          <p class="text-sm text-slate2">St. Joseph's College, Tiruchirappalli</p>
-        </div>
-        <div class="sm:order-1 sm:pr-4 mt-4 sm:mt-0">
-          <div class="glass card-hover rounded-2xl p-5 sm:ml-auto sm:text-right">
-            <p class="text-sm text-slate2">Final year student building a strong commerce foundation alongside practical, hands-on digital marketing experience.</p>
+  <!-- 06. PROJECTS (Tiara Woven Boutique Only) -->
+  <section id="projects" class="py-20 bg-white border-b border-[#0A0A0A]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-baseline gap-4 border-b-2 border-[#0A0A0A] pb-3 mb-10">
+        <span class="font-display text-3xl sm:text-4xl text-[#8B0015]">05</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-[#0A0A0A] tracking-wider uppercase">Client Projects</h2>
+      </div>
+
+      <!-- Single Project Card: Tiara Woven Boutique -->
+      <div class="bg-[#F4F4F3] border-2 border-[#0A0A0A] p-8 shadow-[8px_8px_0px_#8B0015]">
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-300 pb-4 mb-6">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-widest text-zinc-500 block">Boutique & Retail</span>
+            <h3 class="font-display text-3xl sm:text-4xl text-[#0A0A0A]">Tiara Woven Boutique</h3>
           </div>
+          <span class="px-3 py-1 bg-[#8B0015] text-white font-mono text-xs font-bold uppercase tracking-wider">
+            Ongoing Client Project / Currently Working On
+          </span>
+        </div>
+
+        <p class="text-zinc-700 text-sm leading-relaxed mb-6">
+          Actively engaged in handling search visibility, on-page website audits, and organic social media planning for Tiara Woven Boutique. Responsibilities focus on content optimization and maintaining a steady digital presence.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-zinc-200 font-mono text-xs">
+          <div class="space-y-2">
+            <span class="font-bold text-[#8B0015] uppercase block text-[11px]">Website & SEO Scope</span>
+            <ul class="space-y-1.5 text-zinc-700">
+              <li>• Website SEO structure & keyword placement</li>
+              <li>• SEO auditing & technical content fixes</li>
+              <li>• Performance & site metrics tracking</li>
+            </ul>
+          </div>
+          <div class="space-y-2">
+            <span class="font-bold text-[#8B0015] uppercase block text-[11px]">Social Media Scope</span>
+            <ul class="space-y-1.5 text-zinc-700">
+              <li>• Instagram content strategy & design</li>
+              <li>• Managing client's account scheduling</li>
+              <li>• Publishing promotional posts and updates</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-zinc-300 text-[11px] font-mono text-zinc-500 italic">
+          *Note: In compliance with client privacy, specific account handles, confidential media assets, and analytics metrics are kept confidential.
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ CONTACT ============ -->
-<section id="contact" class="py-24 md:py-32 px-5 sm:px-8 bg-white">
-  <div class="max-w-7xl mx-auto">
-    <div class="reveal max-w-2xl mx-auto text-center mb-16">
-      <p class="font-mono2 text-xs uppercase tracking-widest text-brand mb-3">Contact</p>
-      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy tracking-tight">Let's Work Together</h2>
-      <p class="mt-4 text-slate2">Open to internships, freelance projects and full-time roles from 2027 onward.</p>
-    </div>
+  <!-- 07. CONTACT (Strict Order: Phone -> Gmail -> LinkedIn -> Resume) -->
+  <section id="contact" class="py-20 bg-[#0A0A0A] text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-baseline gap-4 border-b-2 border-[#26262A] pb-3 mb-10">
+        <span class="font-display text-3xl sm:text-4xl text-[#8B0015]">06</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wider uppercase">Contact</h2>
+      </div>
 
-    <div class="grid lg:grid-cols-[0.8fr_1.2fr] gap-10">
-      <!-- Contact info -->
-      <div class="reveal-l space-y-4">
-        <a href="mailto:vishalmsd153@gmail.com" class="glass card-hover rounded-2xl p-5 flex items-center gap-4">
-          <span class="w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br from-brand to-sky-400 flex items-center justify-center text-white"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-          <div class="min-w-0">
-            <p class="font-mono2 text-[10px] uppercase tracking-widest text-slate2">Email</p>
-            <p class="font-semibold text-navy text-sm truncate">vishalmsd153@gmail.com</p>
-          </div>
-        </a>
-        <a href="tel:+916379158823" class="glass card-hover rounded-2xl p-5 flex items-center gap-4">
-          <span class="w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br from-brand to-sky-400 flex items-center justify-center text-white"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.7 2.1z"/></svg></span>
-          <div>
-            <p class="font-mono2 text-[10px] uppercase tracking-widest text-slate2">Phone</p>
-            <p class="font-semibold text-navy text-sm">+91 63791 58823</p>
-          </div>
-        </a>
-        <div class="glass rounded-2xl p-5 flex items-center gap-4">
-          <span class="w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br from-brand to-sky-400 flex items-center justify-center text-white"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <div>
-            <p class="font-mono2 text-[10px] uppercase tracking-widest text-slate2">Location</p>
-            <p class="font-semibold text-navy text-sm">Tiruchirappalli, Tamil Nadu, India</p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Contact Details in Exact Specified Order -->
+        <div class="lg:col-span-6 space-y-6">
+          <p class="font-display text-3xl sm:text-4xl leading-tight">
+            Let's collaborate on Digital Marketing & Search Optimization.
+          </p>
+          <p class="text-zinc-400 text-xs sm:text-sm font-sans">
+            Open to digital marketing opportunities, entry-level roles, and project collaborations.
+          </p>
+
+          <div class="space-y-4 pt-4">
+            
+            <!-- 1. Phone Number -->
+            <a href="tel:+916379158823" class="block bg-[#121214] border border-[#26262A] hover:border-[#8B0015] p-4 transition-all duration-200 group">
+              <span class="font-mono text-[10px] uppercase text-zinc-500 block">1. Phone Number</span>
+              <span class="font-mono text-sm sm:text-base text-white group-hover:text-red-400 font-bold">+91 63791 58823</span>
+            </a>
+
+            <!-- 2. Gmail -->
+            <a href="mailto:vishalmsd153@gmail.com" class="block bg-[#121214] border border-[#26262A] hover:border-[#8B0015] p-4 transition-all duration-200 group">
+              <span class="font-mono text-[10px] uppercase text-zinc-500 block">2. Gmail Address</span>
+              <span class="font-mono text-sm sm:text-base text-white group-hover:text-red-400 font-bold">vishalmsd153@gmail.com</span>
+            </a>
+
+            <!-- 3. LinkedIn -->
+            <a href="https://linkedin.com/in/vishalmsd153" target="_blank" rel="noopener noreferrer" class="block bg-[#121214] border border-[#26262A] hover:border-[#8B0015] p-4 transition-all duration-200 group">
+              <span class="font-mono text-[10px] uppercase text-zinc-500 block">3. LinkedIn Profile</span>
+              <span class="font-mono text-sm sm:text-base text-white group-hover:text-red-400 font-bold">linkedin.com/in/vishalmsd153 ↗</span>
+            </a>
+
+            <!-- 4. Resume -->
+            <div class="bg-[#121214] border border-[#26262A] p-5 space-y-3">
+              <span class="font-mono text-[10px] uppercase text-zinc-500 block">4. Curriculum Vitae</span>
+              <div class="flex flex-wrap items-center gap-3">
+                <button onclick="downloadResumePdf()" class="btn-3d-primary px-5 py-2.5 font-mono text-xs font-bold uppercase tracking-wider">
+                  Download Resume (PDF) ↓
+                </button>
+                <button onclick="viewResumePdf()" class="btn-3d-secondary px-5 py-2.5 font-mono text-xs font-bold uppercase tracking-wider">
+                  View Resume ↗
+                </button>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="flex items-center gap-3 pt-3">
-          <a href="https://www.linkedin.com/in/vishalmsd153" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-full glass card-hover flex items-center justify-center text-navy hover:text-brand"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12H3v-12zm7 0h3.8v1.64h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.53 4.78 5.82v6.49h-4v-5.75c0-1.37-.03-3.14-1.94-3.14-1.95 0-2.25 1.5-2.25 3.04v5.85h-4v-12z"/></svg></a>
+        <!-- Formspree Direct Message Form -->
+        <div class="lg:col-span-6 bg-[#121214] border border-[#26262A] p-6 sm:p-8">
+          <h3 class="font-display text-2xl text-white mb-6 uppercase tracking-wider">Send Direct Message</h3>
+          
+          <form id="contact-form" action="https://formspree.io/f/xgojdgyb" method="POST" class="space-y-4 font-mono text-xs">
+            <div>
+              <label for="name" class="block text-zinc-400 uppercase mb-1">Full Name</label>
+              <input type="text" id="name" name="name" required class="w-full bg-[#0A0A0A] border border-[#26262A] focus:border-[#8B0015] text-white px-3 py-2.5 outline-none" placeholder="Your name">
+            </div>
+
+            <div>
+              <label for="email" class="block text-zinc-400 uppercase mb-1">Email Address</label>
+              <input type="email" id="email" name="email" required class="w-full bg-[#0A0A0A] border border-[#26262A] focus:border-[#8B0015] text-white px-3 py-2.5 outline-none" placeholder="you@email.com">
+            </div>
+
+            <div>
+              <label for="subject" class="block text-zinc-400 uppercase mb-1">Subject</label>
+              <input type="text" id="subject" name="subject" required class="w-full bg-[#0A0A0A] border border-[#26262A] focus:border-[#8B0015] text-white px-3 py-2.5 outline-none" placeholder="Project Inquiry / Job Opportunity">
+            </div>
+
+            <div>
+              <label for="message" class="block text-zinc-400 uppercase mb-1">Message</label>
+              <textarea id="message" name="message" rows="4" required class="w-full bg-[#0A0A0A] border border-[#26262A] focus:border-[#8B0015] text-white px-3 py-2.5 outline-none" placeholder="Write your message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-3d-primary w-full py-3 font-mono text-xs font-bold uppercase tracking-wider">
+              Submit Message →
+            </button>
+            <p id="form-status" class="text-xs text-center font-mono mt-2 min-h-[1.2rem]"></p>
+          </form>
         </div>
+
       </div>
 
-      <!-- Contact form -->
-      <form id="contactForm" class="reveal-r glass rounded-3xl p-7 sm:p-9" action="https://formspree.io/f/xgojdgyb" method="POST" novalidate>
-        <div class="grid sm:grid-cols-2 gap-5">
-          <div>
-            <label for="fullName" class="block text-xs font-semibold text-navy mb-2">Full Name</label>
-            <input id="fullName" name="fullName" type="text" required class="field w-full rounded-xl px-4 py-3 text-sm" placeholder="Your name">
-          </div>
-          <div>
-            <label for="email" class="block text-xs font-semibold text-navy mb-2">Email Address</label>
-            <input id="email" name="email" type="email" required class="field w-full rounded-xl px-4 py-3 text-sm" placeholder="you@email.com">
-          </div>
-          <div>
-            <label for="phone" class="block text-xs font-semibold text-navy mb-2">Phone Number</label>
-            <input id="phone" name="phone" type="tel" class="field w-full rounded-xl px-4 py-3 text-sm" placeholder="+91 00000 00000">
-          </div>
-          <div>
-            <label for="subject" class="block text-xs font-semibold text-navy mb-2">Subject</label>
-            <input id="subject" name="subject" type="text" required class="field w-full rounded-xl px-4 py-3 text-sm" placeholder="Let's collaborate">
-          </div>
-          <div class="sm:col-span-2">
-            <label for="message" class="block text-xs font-semibold text-navy mb-2">Message</label>
-            <textarea id="message" name="message" rows="5" required class="field w-full rounded-xl px-4 py-3 text-sm resize-none" placeholder="Tell me about the opportunity..."></textarea>
-          </div>
-          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-        </div>
-        <button type="submit" class="mt-6 w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full btn-primary text-white font-semibold text-sm">
-          Send Message
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-        </button>
-        <p id="formNote" class="mt-4 text-xs text-slate2" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
-</section>
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="bg-navy text-white pt-16 pb-8 px-5 sm:px-8">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-[1.3fr_1fr_1fr] gap-10 pb-10 border-b border-white/10">
-      <div>
-        <a href="#home" class="flex items-center gap-2.5 mb-4">
-          <span class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand to-sky-400 flex items-center justify-center text-white font-display font-bold text-lg">V</span>
-          <span class="font-display font-bold text-lg tracking-tight">Vishal</span>
-        </a>
-        <p class="text-white/60 text-sm max-w-sm leading-relaxed">B.Com Student &amp; Aspiring Digital Marketing Professional based in Tiruchirappalli, Tamil Nadu — building brand stories, one campaign at a time.</p>
-      </div>
-      <div>
-        <p class="font-mono2 text-[11px] uppercase tracking-widest text-white/40 mb-4">Navigate</p>
-        <ul class="space-y-3 text-sm text-white/70">
-          <li><a href="#home" class="hover:text-sky-400 transition-colors">Home</a></li>
-          <li><a href="#about" class="hover:text-sky-400 transition-colors">About</a></li>
-          <li><a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a></li>
-          <li><a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a></li>
-          <li><a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-mono2 text-[11px] uppercase tracking-widest text-white/40 mb-4">Connect</p>
-        <div class="flex items-center gap-3">
-          <a href="https://www.linkedin.com/in/vishalmsd153" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/8 hover:bg-brand flex items-center justify-center transition-colors"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12H3v-12zm7 0h3.8v1.64h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.53 4.78 5.82v6.49h-4v-5.75c0-1.37-.03-3.14-1.94-3.14-1.95 0-2.25 1.5-2.25 3.04v5.85h-4v-12z"/></svg></a>
-        </div>
-        <p class="text-white/50 text-xs mt-5">vishalmsd153@gmail.com<br>+91 63791 58823</p>
+      <!-- Footer Info -->
+      <div class="mt-16 pt-8 border-t border-[#26262A] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-zinc-500">
+        <span>© <span id="year"></span> Vishal R. All rights reserved.</span>
+        <span>Tiruchirappalli, Tamil Nadu, India</span>
       </div>
     </div>
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 text-xs text-white/40">
-      <p>© <span id="year"></span> Vishal. All rights reserved.</p>
-      <p>Designed for internship &amp; career opportunities.</p>
-    </div>
-  </div>
-</footer>
+  </section>
 
-<!-- Scroll to top -->
-<button id="scrollTop" aria-label="Scroll to top" class="fixed bottom-7 right-7 z-40 w-12 h-12 rounded-full btn-primary text-white flex items-center justify-center shadow-xl">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-</button>
+  <!-- JavaScript: PDF Blob Generator & Handlers -->
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-<script>
-  // ===== Year =====
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // ===== Mobile menu =====
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  hamburger.addEventListener('click', () => {
-    const open = hamburger.classList.toggle('open');
-    hamburger.setAttribute('aria-expanded', open);
-    mobileMenu.style.maxHeight = open ? mobileMenu.scrollHeight + 'px' : '0px';
-  });
-  document.querySelectorAll('[data-nav-mobile]').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      mobileMenu.style.maxHeight = '0px';
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
     });
-  });
-
-  // ===== Navbar shadow on scroll + scroll-to-top visibility =====
-  const navbar = document.getElementById('navbar');
-  const scrollTopBtn = document.getElementById('scrollTop');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('shadow-lg', window.scrollY > 20);
-    scrollTopBtn.classList.toggle('show', window.scrollY > 500);
-  });
-  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-  // ===== Scroll-spy active nav link =====
-  const sections = document.querySelectorAll('main section[id]');
-  const navLinks = document.querySelectorAll('[data-nav]');
-  const spyObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        const active = document.querySelector(`[data-nav][href="#${entry.target.id}"]`);
-        if (active) active.classList.add('active');
-      }
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
     });
-  }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
-  sections.forEach(s => spyObserver.observe(s));
 
-  // ===== Reveal on scroll =====
-  const revealEls = document.querySelectorAll('.reveal, .reveal-l, .reveal-r');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => revealObserver.observe(el));
-
-  // ===== Skill bars animation =====
-  const skillSection = document.getElementById('skillBars');
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        document.querySelectorAll('.skill-fill').forEach(fill => {
-          fill.style.width = fill.dataset.skill + '%';
-        });
-        skillObserver.disconnect();
-      }
-    });
-  }, { threshold: 0.3 });
-  if (skillSection) skillObserver.observe(skillSection);
-
-  // ===== Counter animation (hero dashboard) =====
-  const counters = document.querySelectorAll('.counter');
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        counters.forEach(c => {
-          const target = parseInt(c.dataset.target, 10);
-          let cur = 0;
-          const step = Math.max(1, Math.ceil(target / 40));
-          const tick = () => {
-            cur += step;
-            if (cur >= target) { c.textContent = target; return; }
-            c.textContent = cur;
-            requestAnimationFrame(tick);
-          };
-          tick();
-        });
-        counterObserver.disconnect();
-      }
-    });
-  }, { threshold: 0.4 });
-  if (counters.length) counterObserver.observe(document.querySelector('#home'));
-
-  // ===== Contact form (Formspree submission) =====
-  const form = document.getElementById('contactForm');
-  const formNote = document.getElementById('formNote');
-  const submitBtn = form.querySelector('button[type="submit"]');
-  const submitBtnLabel = submitBtn.innerHTML;
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
+    // In-memory authentic PDF generation function
+    function getResumeBlobUrl() {
+      const pdfContent = `%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1240 >>
+stream
+BT
+/F2 20 Tf
+50 790 Td
+(VISHAL R) Tj
+0 -24 Td
+/F1 11 Tf
+(Digital Marketing | Social Media Management | Content Creation) Tj
+0 -16 Td
+(Trichy, Tamil Nadu | +91 63791 58823 | vishalmsd153@gmail.com | linkedin.com/in/vishalmsd153) Tj
+0 -30 Td
+/F2 13 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -16 Td
+/F1 10 Tf
+(Motivated B.Com General final-year student with practical experience in Digital Marketing.) Tj
+0 -14 Td
+(Experienced in social media management, content creation, reels editing, and audience engagement) Tj
+0 -14 Td
+(through an ongoing Digital Marketing internship at VDart Academy.) Tj
+0 -30 Td
+/F2 13 Tf
+(INTERNSHIP EXPERIENCE) Tj
+0 -16 Td
+/F2 11 Tf
+(Digital Marketing Intern - VDart Academy, Trichy (May 2026 - Present)) Tj
+0 -15 Td
+/F1 10 Tf
+(- Managing social media content creation and audience engagement activities.) Tj
+0 -14 Td
+(- Designing promotional content, posters, and flyers using Canva and Photoshop.) Tj
+0 -14 Td
+(- Editing short-form videos and reels using CapCut and VN Editor.) Tj
+0 -14 Td
+(- Supporting content publishing and audience growth on official Instagram channels.) Tj
+0 -30 Td
+/F2 13 Tf
+(EDUCATION) Tj
+0 -16 Td
+/F2 11 Tf
+(B.Com General - St. Joseph College, Tiruchirappalli (2024 - 2027) | Final Year) Tj
+0 -15 Td
+(PGDCA - Post Graduate Diploma in Computer Applications (Completed)) Tj
+0 -15 Td
+(Higher Secondary School - Bishop Heber HSS | SSLC - Jegan Matha HSS) Tj
+0 -30 Td
+/F2 13 Tf
+(CORE SKILLS & CERTIFICATIONS) Tj
+0 -16 Td
+/F1 10 Tf
+(Digital Marketing: Social Media Management, Content Planning, Reels Editing, Instagram Growth) Tj
+0 -14 Td
+(SEO Fundamentals: Keyword Research, On-Page SEO, Content Optimization, Site Auditing) Tj
+0 -14 Td
+(Tools: Canva, CapCut, VN Editor, Adobe Photoshop, Microsoft Excel) Tj
+0 -14 Td
+(Certifications: Digital Marketing, MS Excel, MS Word, PowerPoint, Tally Prime, PGDCA) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000001538 00000 n 
+0000001607 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1681
+%%EOF`;
+      
+      const blob = new Blob([pdfContent], { type: 'application/pdf' });
+      return URL.createObjectURL(blob);
     }
 
-    submitBtn.disabled = true;
-    submitBtn.style.opacity = '0.7';
-    submitBtn.textContent = 'Sending...';
-    formNote.textContent = '';
-    formNote.className = 'mt-4 text-xs text-slate2';
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        formNote.textContent = "Thanks — your message has been sent. I'll get back to you soon.";
-        formNote.className = 'mt-4 text-xs text-emerald-600 font-medium';
-        form.reset();
-      } else {
-        const data = await response.json().catch(() => null);
-        const msg = data && data.errors && data.errors.length
-          ? data.errors.map(err => (err.field ? `${err.field} ${err.message}` : err.message)).join(', ')
-          : "Something went wrong — please try again or email me directly.";
-        formNote.textContent = msg;
-        formNote.className = 'mt-4 text-xs text-red-600 font-medium';
-      }
-    } catch (err) {
-      formNote.textContent = "Couldn't send right now — please email me directly at vishalmsd153@gmail.com.";
-      formNote.className = 'mt-4 text-xs text-red-600 font-medium';
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.style.opacity = '1';
-      submitBtn.innerHTML = submitBtnLabel;
+    // Direct download trigger (saves as Vishal_Resume.pdf)
+    function downloadResumePdf() {
+      const url = getResumeBlobUrl();
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Vishal_Resume.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
     }
-  });
-</script>
 
+    // Direct new tab preview trigger
+    function viewResumePdf() {
+      const url = getResumeBlobUrl();
+      window.open(url, '_blank');
+    }
+
+    // Formspree AJAX Handler
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = 'Sending message...';
+      status.className = 'text-xs text-center font-mono mt-2 text-zinc-400';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          status.textContent = 'Thank you! Your message has been sent successfully.';
+          status.className = 'text-xs text-center font-mono mt-2 text-green-400';
+          form.reset();
+        } else {
+          status.textContent = 'Something went wrong. Please email directly to vishalmsd153@gmail.com';
+          status.className = 'text-xs text-center font-mono mt-2 text-red-400';
+        }
+      } catch (err) {
+        status.textContent = 'Network error. Please email directly to vishalmsd153@gmail.com';
+        status.className = 'text-xs text-center font-mono mt-2 text-red-400';
+      }
+    });
+  </script>
 </body>
 </html>
